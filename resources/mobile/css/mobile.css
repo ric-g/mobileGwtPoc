@@ -1,0 +1,223 @@
+/* only for phone */
+/* line 3, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-phone .x-scroll-scroller {
+  position: relative;
+}
+/* line 7, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-phone .cv-logo {
+  background: url("../images/cv-logo-header-medium.png") no-repeat;
+  min-width: 233px;
+  min-height: 30px;
+}
+
+/* only for tablet */
+/* line 15, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-tablet .cv-logo {
+  background: url("../images/CitiV_Logo_Top.png") no-repeat;
+}
+
+/* for cv list */
+/* line 23, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item {
+  background-color: #EDEDEE;
+  background-image: -webkit-linear-gradient(#cccccc, #ddccdd, #ededee, #eeeeee);
+  height: 100px;
+  font: 13px arial,sans-serif;
+  width: 100%;
+}
+/* line 30, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content {
+  background: url("../images/red-caret-right.png") no-repeat scroll 100% center transparent;
+  width: 98%;
+  padding: 10px 15px 0 4px;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+/* line 37, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content div {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+/* line 41, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content .cv-list-item-download {
+  background: url("../images/download-icon.png") no-repeat scroll 0 0 transparent;
+}
+/* line 44, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content .headline {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #003298;
+  height: 26px;
+}
+/* line 51, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content .cv-list-item-download .headline {
+  padding-left: 27px;
+}
+/* line 54, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content .author {
+  font-weight: bold;
+  font-size: 14px;
+  color: #434343;
+  float: left;
+  width: 45%;
+  padding: 6px 0 3px 2px;
+}
+/* line 62, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content .pubdate {
+  color: #7F7F7F;
+  font-size: 14px;
+  float: right;
+  width: 45%;
+  text-align: right;
+  padding: 6px 0 3px 0;
+}
+/* line 70, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content .content {
+  color: #434343;
+  height: 30px;
+  overflow: hidden;
+  padding: 8px 0 0 3px;
+  clear: both;
+  float: left;
+  white-space: nowrap;
+  width: 100%;
+}
+/* line 80, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list-item .cv-list-item-content .title {
+  font-weight: bold;
+  color: #434343;
+  padding: 7px 0 0 3px;
+}
+
+/* line 87, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list.x-list {
+  background-color: #EEE !important;
+  height: 100%;
+  width: 100%;
+}
+/* line 92, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list.x-list .x-body:first-child {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+/* line 99, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list.x-list .x-list-item .x-list-item-label {
+  padding: 0 !important;
+}
+/* line 102, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list.x-list .cv-list-item.x-item-pressed {
+  text-shadow: none;
+  background-color: #B2DF1E;
+  background-image: -webkit-linear-gradient(#8888ff, #7777ff, #6666ff, #5555ff);
+}
+/* line 107, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-list.x-list .cv-list-item.x-item-pressed .headline, .cv-list.x-list .cv-list-item.x-item-pressed .author, .cv-list.x-list .cv-list-item.x-item-pressed .pubdate, .cv-list.x-list .cv-list-item.x-item-pressed .content, .cv-list.x-list .cv-list-item.x-item-pressed .title {
+  color: #FFF;
+}
+
+/* line 112, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item {
+  height: 200px;
+}
+/* line 115, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item .x-toolbar {
+  background-color: #3425FF;
+  background-image: -webkit-linear-gradient(#6888ff, #5465ff, #3425ff, blue);
+  color: white;
+  height: 30px;
+}
+/* line 121, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item .cv-list-item-content {
+  background: transparent;
+  height: 166px;
+}
+/* line 125, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item .cv-list-item-commentary {
+  background: url("../images/commentary.png") no-repeat scroll 0 5px transparent;
+}
+/* line 128, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item .cv-list-item-research {
+  background: url("../images/research.png") no-repeat scroll 0 5px transparent;
+}
+/* line 131, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item .cv-list-item-headline .headline {
+  padding-left: 14px;
+}
+/* line 134, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item .summary {
+  padding-left: 6px;
+  line-height: 40px;
+  color: #434343;
+  font-size: 14px;
+}
+/* line 140, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item .content {
+  padding-left: 14px;
+  color: #003298;
+}
+/* line 144, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.cv-topstories .cv-list-item .content.cv-list-item-commentary, .cv-topstories .cv-list-item .content.cv-list-item-research {
+  background-position-y: 10px;
+}
+
+/* for portlet*/
+/* line 150, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.portlet {
+  background-color: #EFE;
+  /*height:200px;*/
+  border: 0;
+  border-right: 1px solid #333;
+}
+/* line 156, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.portlet .portletTitle {
+  height: 35px;
+  color: #FFCC00;
+  font: bold 14px arial,sans-serif;
+}
+
+/* line 163, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+#menuBtn .x-button-pressed {
+  background: url("../images/arrow_red.png") no-repeat center top;
+}
+
+/* line 167, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.phoneSearchIcon {
+  background: url("../images/searchbar.png") no-repeat !important;
+  height: 32px !important;
+  width: 87px !important;
+}
+
+/* line 173, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.phone_searchfield {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* line 180, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.phone_searchfield .x-component-outer, .phone_searchfield input {
+  width: 100%;
+}
+
+/* line 184, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.overlay_panel {
+  width: 100%;
+  height: 45px;
+}
+/* line 187, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.overlay_panel .cancelButton {
+  margin-left: 70px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 193, c:/software/git/mobilePoc/resources/sass/mobile.scss */
+.overlay_mask {
+  position: absolute;
+  left: 0px !important;
+  top: 0px !important;
+}
