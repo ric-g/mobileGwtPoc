@@ -265,14 +265,6 @@ function mobile(){
   function getCompiledCodeFilename(){
     var answers = [];
     var softPermutationId;
-    function unflattenKeylistIntoAnswers(propValArray, value){
-      var answer = answers;
-      for (var i = 0, n = propValArray.length - 1; i < n; ++i) {
-        answer = answer[propValArray[i]] || (answer[propValArray[i]] = []);
-      }
-      answer[propValArray[n]] = value;
-    }
-
     var values = [];
     var providers = [];
     function computePropValue(propName){
@@ -290,65 +282,6 @@ function mobile(){
       throw null;
     }
 
-    providers['user.agent'] = function(){
-      var ua = navigator.userAgent.toLowerCase();
-      var makeVersion = function(result){
-        return parseInt(result[1]) * 1000 + parseInt(result[2]);
-      }
-      ;
-      if (function(){
-        return ua.indexOf('opera') != -1;
-      }
-      ())
-        return 'opera';
-      if (function(){
-        return ua.indexOf('webkit') != -1 || function(){
-          if (ua.indexOf('chromeframe') != -1) {
-            return true;
-          }
-          if (typeof window['ActiveXObject'] != 'undefined') {
-            try {
-              var obj = new ActiveXObject('ChromeTab.ChromeFrame');
-              if (obj) {
-                obj.registerBhoIfNeeded();
-                return true;
-              }
-            }
-             catch (e) {
-            }
-          }
-          return false;
-        }
-        ();
-      }
-      ())
-        return 'safari';
-      if (function(){
-        return ua.indexOf('msie') != -1 && $doc_0.documentMode >= 9;
-      }
-      ())
-        return 'ie9';
-      if (function(){
-        return ua.indexOf('msie') != -1 && $doc_0.documentMode >= 8;
-      }
-      ())
-        return 'ie8';
-      if (function(){
-        var result = /msie ([0-9]+)\.([0-9]+)/.exec(ua);
-        if (result && result.length == 3)
-          return makeVersion(result) >= 6000;
-      }
-      ())
-        return 'ie6';
-      if (function(){
-        return ua.indexOf('gecko') != -1;
-      }
-      ())
-        return 'gecko1_8';
-      return 'unknown';
-    }
-    ;
-    values['user.agent'] = {gecko1_8:0, ie6:1, ie8:2, ie9:3, opera:4, safari:5};
     __gwt_isKnownPropertyValue = function(propName, propValue){
       return propValue in values[propName];
     }
@@ -360,13 +293,7 @@ function mobile(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie8'], '6BF3506259C6AA6B6F2136B2511F2084');
-      unflattenKeylistIntoAnswers(['safari'], '7627F3D0CDC308C4E1CB0BE72360BAB2');
-      unflattenKeylistIntoAnswers(['gecko1_8'], '96863FBE2830659D83A8B0B2A6F7E7B0');
-      unflattenKeylistIntoAnswers(['ie6'], '99D96A05AA27D9648F2CF7B1380F1D4C');
-      unflattenKeylistIntoAnswers(['opera'], 'ABF1DE5B2CADFAFBD55218B6886229C8');
-      unflattenKeylistIntoAnswers(['ie9'], 'BF7B74DF347BF9224461BE865CF1E00D');
-      strongName = answers[computePropValue('user.agent')];
+      strongName = '6762CA00E86C64163801A72682FC4CF8';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = strongName.substring(idx + 1);
